@@ -31,7 +31,7 @@ def factors(ls):
     for i in ls:
         find_numbers(i)
 
-if len(argv) == 3:
+if len(argv) == 2:
     factors(read_test_file(argv[3]))
 
 
