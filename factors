@@ -32,6 +32,6 @@ def factors(ls):
         find_numbers(i)
 
 if len(argv) == 3:
-    factors(read_test_file(argv[1]))
+    factors(read_test_file(argv[3]))
 
 
