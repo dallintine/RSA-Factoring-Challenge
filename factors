@@ -20,16 +20,10 @@ def read_test_file(file_name):
 def find_numbers(n):
     """Function to find factors of current number"""
 
-    factors = []
-    for i in range(2, int(sqrt(n)) + 1):
-        while n % i == 0:
-            factors.append(i)
-            n //= i
-    if n > 1:
-        factors.append(n)
-
-    factors_str = '*'.join(str(factor) for factor in factors)
-    print("{}={}".format(n, factors_str))
+    for i in range(2, n):
+        if n == ((n // i) * i):
+            print("{}={}*{}".format(n, (n // i), i))
+            break
 
 def factors(ls):
     """Function to iterate between numbers in file"""
@@ -38,5 +32,4 @@ def factors(ls):
         find_numbers(i)
 
 if len(argv) == 2:
-    factors(read_test_file(argv[1]))
-
+    factors(read_test_file(argv[1]))"
