@@ -32,4 +32,4 @@ def factors(ls):
         find_numbers(i)
 
 if len(argv) == 2:
-    factors(read_test_file(argv[2]))"
+    factors(read_test_file(argv[2]))
